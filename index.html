@@ -1,7 +1,119 @@
-<html>
-  <body>
-  <h1>Hello World</h1>
-  <h3>My Name is Shehbaz Jafri</h3>
-  <h4>and this site is in development</h4>
-  </body>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <title>Shehbaz Jafri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!--Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!--Bulma-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+        li{
+            text-decoration: none !important;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</head>
+<body>
+<header>
+
+                <nav class=" navbar is-fixed-top tabs is-centered" role="navigation" aria-label="main navigation">
+                        <!--<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">-->
+                            <!--<span aria-hidden="true"></span>-->
+                            <!--<span aria-hidden="true"></span>-->
+                            <!--<span aria-hidden="true"></span></a>-->
+                    <ul>
+                        <li><a href="#shehbaz-jafri" class="nav-item is-hidden-mobile is-tab ">
+                            Shehbaz Jafri
+                        </a></li>
+                        <li><a href="#about" class="nav-item is-hidden-mobile is-tab ">
+                            About
+                        </a></li>
+                        <li><a href="#skills" class="nav-item is-hidden-mobile is-tab ">
+                            Skills
+                        </a></li>
+                        <li><a href="#projects" class="nav-item  is-hidden-mobile is-tab ">
+                            Projects
+                        </a></li>
+                        <li><a href="#contact" class="nav-item is-hidden-mobile  is-tab ">
+                            Contact
+                        </a></li>
+                    </ul>
+                </nav>
+
+    <section id="shehbaz-jafri" class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Shehbaz Jafri
+                </h1>
+                <h2 class="subtitle">
+                    Primary bold subtitle
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h1 class="title">About Me</h1>
+            <p>Hello, I'm Shehbaz Jafri. I'm currently a student pursuing a master's degree at DA-IICT. </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h1 class="title">Skills</h1>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h1 class="title">Projects</h1>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h1 class="title">Contact</h1>
+        </div>
+    </section>
+</header>
+
+</body>
+
 </html>
